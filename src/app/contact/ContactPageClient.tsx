@@ -106,34 +106,23 @@ export function ContactPageClient() {
 
   return (
     <div className="relative flex w-full flex-col overflow-hidden pb-20 md:pb-8">
-      {/* Subtle ambient purple backdrops */}
-      <div className="pointer-events-none absolute -top-40 left-1/2 h-[360px] w-[720px] -translate-x-1/2 rounded-full bg-gradient-to-b from-[#9333ea]/20 via-[#8b5cf6]/10 to-transparent blur-3xl opacity-60" />
-      <div className="pointer-events-none absolute top-[40rem] -right-32 h-[500px] w-[500px] rounded-full bg-[#ddb7ff]/10 blur-[120px] opacity-40" />
-      <div className="pointer-events-none absolute top-[70rem] -left-32 h-[520px] w-[520px] rounded-full bg-[#3131c0]/15 blur-[140px] opacity-30" />
+      {/* Subtle ambient gold backdrops */}
+      <div className="pointer-events-none absolute -top-40 left-1/2 h-[360px] w-[720px] -translate-x-1/2 rounded-full bg-gradient-to-b from-[#c4923a]/12 via-[#b8860b]/6 to-transparent blur-3xl opacity-70" />
+      <div className="pointer-events-none absolute top-[40rem] -right-32 h-[500px] w-[500px] rounded-full bg-[#c4923a]/6 blur-[120px] opacity-50" />
+      <div className="pointer-events-none absolute top-[70rem] -left-32 h-[520px] w-[520px] rounded-full bg-[#8b6914]/6 blur-[140px] opacity-40" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-6 sm:px-12 sm:py-8 lg:px-20">
         {/* SECTION 1: Header & Hero */}
         <section className="mx-auto mb-16 max-w-3xl space-y-4 text-center sm:space-y-6">
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center space-x-2 rounded-full border border-[rgba(168,85,247,0.4)] bg-[#ddb7ff]/10 px-3.5 py-1.5 shadow-sm backdrop-blur-md"
-          >
-            <span className="h-2 w-2 animate-pulse rounded-full bg-[#ddb7ff] shadow-[0_0_8px_#ddb7ff]" />
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#ddb7ff]">
-              ZYNX — YOUR TECH PARTNER
-            </span>
-          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl font-semibold tracking-tight text-[#f8fafc] sm:text-5xl lg:text-[64px] lg:leading-[72px]"
+            className="text-4xl font-semibold tracking-tight text-[#111111] sm:text-5xl lg:text-[64px] lg:leading-[72px]"
           >
             Get in{" "}
-            <span className="brand-x-gradient drop-shadow-[0_0_24px_rgba(168,85,247,0.45)]">
+            <span className="brand-x-gradient drop-shadow-[0_0_20px_rgba(196,146,58,0.30)]">
               Touch
             </span>
           </motion.h1>
@@ -142,7 +131,7 @@ export function ContactPageClient() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mx-auto max-w-2xl text-base leading-relaxed text-[#cfc2d6] sm:text-lg"
+            className="mx-auto max-w-2xl text-base leading-relaxed text-[#6b7280] sm:text-lg"
           >
             Have a project in mind? Let&apos;s discuss how we can bring your vision to life. We&apos;re here to engineer high-velocity solutions tailored to your scale.
           </motion.p>
@@ -152,13 +141,13 @@ export function ContactPageClient() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="inline-flex items-center gap-3 rounded-full border border-white/[0.08] bg-[#2a2a2c]/60 px-4 py-2 backdrop-blur-lg"
+            className="inline-flex items-center gap-3 rounded-full border border-black/[0.08] bg-[#f5eed8]/70 px-4 py-2 backdrop-blur-lg"
           >
             <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#4cd7f6] opacity-75" />
-              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#4cd7f6]" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#8b6914] opacity-75" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#8b6914]" />
             </span>
-            <span className="font-mono text-xs text-[#e5e1e4] sm:text-[13px]">
+            <span className="font-mono text-xs text-[#374151] sm:text-[13px]">
               Available for Q2/Q3 2026 builds • Typical reply &lt; 24h
             </span>
           </motion.div>
@@ -173,21 +162,21 @@ export function ContactPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-white/[0.08] bg-[#0d0c13]/80 p-6 shadow-md backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(168,85,247,0.4)] hover:bg-[#2a2a2c]/70"
+            className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-black/[0.08] bg-white/90 p-6 shadow-sm backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(196,146,58,0.40)] hover:bg-white"
           >
-            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-[#ddb7ff]/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-[#c4923a]/35 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             <div>
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#ddb7ff]/10 text-[#ddb7ff] transition-colors group-hover:bg-[#ddb7ff]/20">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#c4923a]/10 text-[#c4923a] transition-colors group-hover:bg-[#c4923a]/18">
                 <Mail className="h-6 w-6" />
               </div>
               <div className="mb-1 text-xs uppercase tracking-wider text-[#9ca3af]">
                 Direct Inquiries
               </div>
-              <div className="text-lg font-medium text-[#f8fafc] transition-colors group-hover:text-[#ddb7ff]">
+              <div className="text-lg font-medium text-[#111111] transition-colors group-hover:text-[#c4923a]">
                 example@company.com
               </div>
             </div>
-            <div className="mt-4 flex items-center text-xs font-medium text-[#ddb7ff] sm:text-[13px]">
+            <div className="mt-4 flex items-center text-xs font-medium text-[#c4923a] sm:text-[13px]">
               <span>Compose email</span>
               <ArrowRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
             </div>
@@ -200,21 +189,21 @@ export function ContactPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.05 }}
-            className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-white/[0.08] bg-[#0d0c13]/80 p-6 shadow-md backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(168,85,247,0.4)] hover:bg-[#2a2a2c]/70"
+            className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-black/[0.08] bg-white/90 p-6 shadow-sm backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(196,146,58,0.40)] hover:bg-white"
           >
-            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-[#ddb7ff]/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-[#8b6914]/35 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             <div>
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#c0c1ff]/10 text-[#c0c1ff] transition-colors group-hover:bg-[#c0c1ff]/20">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#8b6914]/10 text-[#8b6914] transition-colors group-hover:bg-[#8b6914]/18">
                 <Phone className="h-6 w-6" />
               </div>
               <div className="mb-1 text-xs uppercase tracking-wider text-[#9ca3af]">
                 Voice &amp; Support
               </div>
-              <div className="text-lg font-medium text-[#f8fafc] transition-colors group-hover:text-[#c0c1ff]">
+              <div className="text-lg font-medium text-[#111111] transition-colors group-hover:text-[#8b6914]">
                 +91 XXXXX XXXXX
               </div>
             </div>
-            <div className="mt-4 flex items-center text-xs font-medium text-[#c0c1ff] sm:text-[13px]">
+            <div className="mt-4 flex items-center text-xs font-medium text-[#8b6914] sm:text-[13px]">
               <span>Call directly</span>
               <ArrowRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
             </div>
@@ -229,21 +218,21 @@ export function ContactPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-white/[0.08] bg-[#0d0c13]/80 p-6 shadow-md backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(168,85,247,0.4)] hover:bg-[#2a2a2c]/70"
+            className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-black/[0.08] bg-white/90 p-6 shadow-sm backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(196,146,58,0.40)] hover:bg-white"
           >
-            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-[#4cd7f6]/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-[#b8860b]/35 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             <div>
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#4cd7f6]/10 text-[#4cd7f6] transition-colors group-hover:bg-[#4cd7f6]/20">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#b8860b]/10 text-[#b8860b] transition-colors group-hover:bg-[#b8860b]/18">
                 <MessageCircle className="h-6 w-6" />
               </div>
               <div className="mb-1 text-xs uppercase tracking-wider text-[#9ca3af]">
                 Instant WhatsApp
               </div>
-              <div className="text-lg font-medium text-[#f8fafc] transition-colors group-hover:text-[#4cd7f6]">
+              <div className="text-lg font-medium text-[#111111] transition-colors group-hover:text-[#b8860b]">
                 WhatsApp Channel
               </div>
             </div>
-            <div className="mt-4 flex items-center text-xs font-medium text-[#4cd7f6] sm:text-[13px]">
+            <div className="mt-4 flex items-center text-xs font-medium text-[#b8860b] sm:text-[13px]">
               <span>Chat now</span>
               <ArrowRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
             </div>
@@ -256,21 +245,21 @@ export function ContactPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.15 }}
-            className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-white/[0.08] bg-[#0d0c13]/80 p-6 shadow-md backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(168,85,247,0.4)] hover:bg-[#2a2a2c]/70"
+            className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-black/[0.08] bg-white/90 p-6 shadow-sm backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(196,146,58,0.40)] hover:bg-white"
           >
-            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-[#ddb7ff]/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-[#c4923a]/35 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             <div>
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#ddb7ff]/10 text-[#ddb7ff] transition-colors group-hover:bg-[#ddb7ff]/20">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#c4923a]/10 text-[#c4923a] transition-colors group-hover:bg-[#c4923a]/18">
                 <MapPin className="h-6 w-6" />
               </div>
               <div className="mb-1 text-xs uppercase tracking-wider text-[#9ca3af]">
                 Engineering HQ
               </div>
-              <div className="line-clamp-1 text-lg font-medium text-[#f8fafc] transition-colors group-hover:text-[#ddb7ff]">
+              <div className="line-clamp-1 text-lg font-medium text-[#111111] transition-colors group-hover:text-[#c4923a]">
                 Technology Center
               </div>
             </div>
-            <div className="mt-4 flex items-center text-xs font-medium text-[#ddb7ff] sm:text-[13px]">
+            <div className="mt-4 flex items-center text-xs font-medium text-[#c4923a] sm:text-[13px]">
               <span>Corporate Campus • Map</span>
               <ArrowUpRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
             </div>
@@ -279,29 +268,29 @@ export function ContactPageClient() {
 
         {/* SECTION 3: Book a Scoping Call Spotlight Card */}
         <section className="mb-16">
-          <div className="relative overflow-hidden rounded-2xl border border-[rgba(168,85,247,0.4)]/40 bg-gradient-to-br from-[#0d0c13] via-[#2a2a2c]/60 to-[#0d0c13] p-6 shadow-xl backdrop-blur-xl sm:p-10">
-            <div className="pointer-events-none absolute -right-24 -bottom-24 h-80 w-80 rounded-full bg-[#ddb7ff]/10 blur-3xl" />
+          <div className="relative overflow-hidden rounded-2xl border border-[rgba(196,146,58,0.25)] bg-gradient-to-br from-[#fdf8ee] via-[#f5eed8]/60 to-[#fdf8ee] p-6 shadow-md backdrop-blur-xl sm:p-10">
+            <div className="pointer-events-none absolute -right-24 -bottom-24 h-80 w-80 rounded-full bg-[#c4923a]/8 blur-3xl" />
             <div className="relative z-10 grid grid-cols-1 items-center gap-6 lg:grid-cols-12 lg:gap-8">
               <div className="space-y-3 lg:col-span-8">
-                <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#c0c1ff]">
+                <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8b6914]">
                   <Calendar className="h-4 w-4" />
                   Direct Founder Access
                 </div>
-                <h2 className="text-2xl font-semibold tracking-tight text-[#f8fafc] sm:text-3xl lg:text-4xl">
+                <h2 className="text-2xl font-semibold tracking-tight text-[#111111] sm:text-3xl lg:text-4xl">
                   Book a scoping call
                 </h2>
-                <p className="max-w-2xl text-[15px] leading-relaxed text-[#cfc2d6]">
+                <p className="max-w-2xl text-[15px] leading-relaxed text-[#6b7280]">
                   30 minutes with a founder. Pick a time that works — no forms, no back-and-forth email loops. Prefer to write first? The project enquiry form is located directly below.
                 </p>
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-1 font-mono text-xs text-[#9ca3af]">
                   <span className="flex items-center gap-1.5">
-                    <CheckCircle className="h-3.5 w-3.5 text-[#ddb7ff]" /> Architectural Review
+                    <CheckCircle className="h-3.5 w-3.5 text-[#c4923a]" /> Architectural Review
                   </span>
                   <span className="flex items-center gap-1.5">
-                    <CheckCircle className="h-3.5 w-3.5 text-[#ddb7ff]" /> Tech Stack Feasibility
+                    <CheckCircle className="h-3.5 w-3.5 text-[#c4923a]" /> Tech Stack Feasibility
                   </span>
                   <span className="flex items-center gap-1.5">
-                    <CheckCircle className="h-3.5 w-3.5 text-[#ddb7ff]" /> MVP Estimation
+                    <CheckCircle className="h-3.5 w-3.5 text-[#c4923a]" /> MVP Estimation
                   </span>
                 </div>
               </div>
@@ -310,7 +299,7 @@ export function ContactPageClient() {
                 <button
                   type="button"
                   onClick={() => setShowCalendar(!showCalendar)}
-                  className="purple-glow-shadow inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 via-[#8b5cf6] to-indigo-600 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-[#f8fafc] shadow-xl transition-all duration-300 hover:scale-[1.02] hover:from-purple-500 hover:to-indigo-500 sm:w-auto"
+                  className="purple-glow-shadow inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-[#111111] via-[#1a1a1a] to-[#111111] px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-white shadow-md transition-all duration-300 hover:scale-[1.02] hover:from-[#0a0a0a] hover:to-[#333333] sm:w-auto"
                 >
                   <Clock className="mr-2 h-4 w-4" />
                   Schedule 30-min Call
@@ -328,14 +317,14 @@ export function ContactPageClient() {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3 }}
-                className="mt-6 border-t border-white/[0.08] pt-6"
+                className="mt-6 border-t border-black/[0.06] pt-6"
               >
-                <div className="rounded-xl border border-white/[0.04] bg-[#0e0e10]/80 p-4 backdrop-blur-md sm:p-6">
+                <div className="rounded-xl border border-black/[0.06] bg-white/80 p-4 backdrop-blur-md sm:p-6">
                   <div className="mb-4 flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-center">
-                    <span className="text-base font-medium text-[#f8fafc] sm:text-lg">
+                    <span className="text-base font-medium text-[#111111] sm:text-lg">
                       Next Available Scoping Slots (IST / GMT+5:30)
                     </span>
-                    <span className="font-mono text-xs text-[#4cd7f6]">
+                    <span className="font-mono text-xs text-[#8b6914]">
                       Real-time sync
                     </span>
                   </div>
@@ -348,11 +337,10 @@ export function ContactPageClient() {
                           key={slot}
                           type="button"
                           onClick={() => handleSelectSlot(slot)}
-                          className={`rounded-lg p-3 font-mono text-xs transition-all ${
-                            isSelected
-                              ? "bg-[#ddb7ff] font-bold text-[#030014]"
-                              : "bg-[#2a2a2c] text-[#cfc2d6] hover:bg-[#ddb7ff]/20 hover:text-[#ddb7ff]"
-                          }`}
+                          className={`rounded-lg p-3 font-mono text-xs transition-all ${isSelected
+                              ? "bg-[#c4923a] font-bold text-white"
+                              : "bg-[#f5eed8] text-[#6b7280] hover:bg-[#c4923a]/15 hover:text-[#b8860b]"
+                            }`}
                         >
                           {slot}
                         </button>
@@ -364,7 +352,7 @@ export function ContactPageClient() {
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
-                      className="mt-4 rounded-lg bg-[#ddb7ff]/10 p-3 text-center text-xs font-medium text-[#ddb7ff] sm:text-[13px]"
+                      className="mt-4 rounded-lg bg-[#c4923a]/10 p-3 text-center text-xs font-medium text-[#b8860b] sm:text-[13px]"
                     >
                       Slot locked: {selectedSlot} — Redirecting to Founder calendar gateway...
                     </motion.div>
@@ -378,12 +366,12 @@ export function ContactPageClient() {
         {/* SECTION 4 & 5: Split Grid (Enquiry Form & Operational Meta) */}
         <div className="mb-16 grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-10">
           {/* Interactive Enquiry Form Column (7 cols) */}
-          <section className="relative rounded-2xl border border-white/[0.08] bg-[#0d0c13]/90 p-6 shadow-xl backdrop-blur-2xl sm:p-10 lg:col-span-7">
+          <section className="relative rounded-2xl border border-black/[0.08] bg-white/90 p-6 shadow-sm backdrop-blur-2xl sm:p-10 lg:col-span-7">
             <div className="mb-6 space-y-1">
-              <h2 className="text-2xl font-semibold tracking-tight text-[#f8fafc] sm:text-3xl">
+              <h2 className="text-2xl font-semibold tracking-tight text-[#111111] sm:text-3xl">
                 Send us a Message
               </h2>
-              <p className="text-[15px] text-[#cfc2d6]">
+              <p className="text-[15px] text-[#6b7280]">
                 Fill out the form below and we&apos;ll get back to you as soon as possible.
               </p>
             </div>
@@ -407,13 +395,13 @@ export function ContactPageClient() {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="space-y-1.5">
                   <label
-                    className="block text-xs font-medium uppercase tracking-wider text-[#f8fafc]"
+                    className="block text-xs font-medium uppercase tracking-wider text-[#374151]"
                     htmlFor="contact_name"
                   >
-                    Your name <span className="text-[#ddb7ff]">*</span>
+                    Your name <span className="text-[#c4923a]">*</span>
                   </label>
                   <input
-                    className="w-full rounded-lg bg-[#0e0e10] px-4 py-3 text-[15px] text-[#f8fafc] shadow-inner placeholder:text-[#9ca3af]/60 focus:bg-[#1c1b1d] focus:outline-none focus:ring-2 focus:ring-[#ddb7ff]"
+                    className="w-full rounded-lg border border-black/[0.10] bg-[#fdf8ee] px-4 py-3 text-[15px] text-[#111111] shadow-inner placeholder:text-[#9ca3af]/60 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#c4923a]/50"
                     id="contact_name"
                     name="name"
                     placeholder="e.g. Alex Morgan"
@@ -426,13 +414,13 @@ export function ContactPageClient() {
 
                 <div className="space-y-1.5">
                   <label
-                    className="block text-xs font-medium uppercase tracking-wider text-[#f8fafc]"
+                    className="block text-xs font-medium uppercase tracking-wider text-[#374151]"
                     htmlFor="contact_email"
                   >
-                    Work email <span className="text-[#ddb7ff]">*</span>
+                    Work email <span className="text-[#c4923a]">*</span>
                   </label>
                   <input
-                    className="w-full rounded-lg bg-[#0e0e10] px-4 py-3 text-[15px] text-[#f8fafc] shadow-inner placeholder:text-[#9ca3af]/60 focus:bg-[#1c1b1d] focus:outline-none focus:ring-2 focus:ring-[#ddb7ff]"
+                    className="w-full rounded-lg border border-black/[0.10] bg-[#fdf8ee] px-4 py-3 text-[15px] text-[#111111] shadow-inner placeholder:text-[#9ca3af]/60 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#c4923a]/50"
                     id="contact_email"
                     name="email"
                     placeholder="alex@company.com"
@@ -447,11 +435,11 @@ export function ContactPageClient() {
               {/* Approximate Budget Pills */}
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between">
-                  <label className="block text-xs font-medium uppercase tracking-wider text-[#f8fafc]">
+                  <label className="block text-xs font-medium uppercase tracking-wider text-[#374151]">
                     Approximate budget{" "}
                     <span className="text-[#9ca3af] normal-case">(optional)</span>
                   </label>
-                  <span className="font-mono text-xs text-[#ddb7ff]">
+                  <span className="font-mono text-xs text-[#c4923a]">
                     {budget || "Not selected"}
                   </span>
                 </div>
@@ -463,11 +451,10 @@ export function ContactPageClient() {
                         key={opt}
                         type="button"
                         onClick={() => setBudget(opt)}
-                        className={`rounded-lg px-3.5 py-2 text-xs transition-all sm:text-[13px] ${
-                          isSelected
-                            ? "border border-[#ddb7ff]/40 bg-[#ddb7ff]/20 font-medium text-[#ddb7ff]"
-                            : "bg-[#2a2a2c] text-[#cfc2d6] hover:bg-[#39393b] hover:text-[#f8fafc]"
-                        }`}
+                        className={`rounded-lg px-3.5 py-2 text-xs transition-all sm:text-[13px] ${isSelected
+                            ? "border border-[#c4923a]/40 bg-[#c4923a]/15 font-medium text-[#b8860b]"
+                            : "bg-[#f5eed8] text-[#6b7280] hover:bg-[#eaddb8] hover:text-[#111111]"
+                          }`}
                       >
                         {opt}
                       </button>
@@ -479,11 +466,11 @@ export function ContactPageClient() {
               {/* Timeline Pills */}
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between">
-                  <label className="block text-xs font-medium uppercase tracking-wider text-[#f8fafc]">
+                  <label className="block text-xs font-medium uppercase tracking-wider text-[#374151]">
                     Timeline{" "}
                     <span className="text-[#9ca3af] normal-case">(optional)</span>
                   </label>
-                  <span className="font-mono text-xs text-[#c0c1ff]">
+                  <span className="font-mono text-xs text-[#8b6914]">
                     {timeline || "Not selected"}
                   </span>
                 </div>
@@ -495,11 +482,10 @@ export function ContactPageClient() {
                         key={opt}
                         type="button"
                         onClick={() => setTimeline(opt)}
-                        className={`rounded-lg px-3.5 py-2 text-xs transition-all sm:text-[13px] ${
-                          isSelected
-                            ? "border border-[#c0c1ff]/40 bg-[#3131c0]/20 font-medium text-[#c0c1ff]"
-                            : "bg-[#2a2a2c] text-[#cfc2d6] hover:bg-[#39393b] hover:text-[#f8fafc]"
-                        }`}
+                        className={`rounded-lg px-3.5 py-2 text-xs transition-all sm:text-[13px] ${isSelected
+                            ? "border border-[#8b6914]/40 bg-[#8b6914]/12 font-medium text-[#8b6914]"
+                            : "bg-[#f5eed8] text-[#6b7280] hover:bg-[#eaddb8] hover:text-[#111111]"
+                          }`}
                       >
                         {opt}
                       </button>
@@ -511,13 +497,13 @@ export function ContactPageClient() {
               {/* Project Details Textarea */}
               <div className="space-y-1.5">
                 <label
-                  className="block text-xs font-medium uppercase tracking-wider text-[#f8fafc]"
+                  className="block text-xs font-medium uppercase tracking-wider text-[#374151]"
                   htmlFor="contact_message"
                 >
-                  What are you trying to build or fix? <span className="text-[#ddb7ff]">*</span>
+                  What are you trying to build or fix? <span className="text-[#c4923a]">*</span>
                 </label>
                 <textarea
-                  className="w-full resize-y rounded-lg bg-[#0e0e10] px-4 py-3 text-[15px] text-[#f8fafc] shadow-inner placeholder:text-[#9ca3af]/60 focus:bg-[#1c1b1d] focus:outline-none focus:ring-2 focus:ring-[#ddb7ff]"
+                  className="w-full resize-y rounded-lg border border-black/[0.10] bg-[#fdf8ee] px-4 py-3 text-[15px] text-[#111111] shadow-inner placeholder:text-[#9ca3af]/60 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#c4923a]/50"
                   id="contact_message"
                   name="message"
                   placeholder="Give us a short overview of your requirements, current pain points, or target milestone..."
@@ -532,7 +518,7 @@ export function ContactPageClient() {
               <div className="space-y-3 pt-2">
                 <button
                   type="submit"
-                  className="purple-glow-shadow flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#9333ea] via-[#b76dff] to-[#8b5cf6] px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-[#f8fafc] shadow-xl transition-all duration-300 hover:scale-[1.01] hover:opacity-95 active:scale-95"
+                  className="purple-glow-shadow flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#111111] via-[#1a1a1a] to-[#111111] px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-white shadow-md transition-all duration-300 hover:scale-[1.01] hover:opacity-90 active:scale-95"
                 >
                   <Send className="h-4 w-4" />
                   <span>Send enquiry via WhatsApp</span>
@@ -543,7 +529,7 @@ export function ContactPageClient() {
                   <button
                     type="button"
                     onClick={triggerDirectEmailDraft}
-                    className="cursor-pointer text-[#ddb7ff] underline transition-colors hover:text-[#f0dbff]"
+                    className="cursor-pointer text-[#c4923a] underline transition-colors hover:text-[#b8860b]"
                   >
                     Prefer email instead?
                   </button>
@@ -551,7 +537,7 @@ export function ContactPageClient() {
 
                 <p className="pt-1 text-[12px] leading-relaxed text-[#9ca3af]/80">
                   We only use your details to reply — see our{" "}
-                  <Link href="#" className="underline hover:text-[#ddb7ff]">
+                  <Link href="#" className="underline hover:text-[#c4923a]">
                     Privacy Policy
                   </Link>
                   . Zero cold sales spam guaranteed.
@@ -563,50 +549,50 @@ export function ContactPageClient() {
           {/* Operational Meta & HQ Info (5 cols) */}
           <div className="space-y-6 lg:col-span-5">
             {/* Office Hours & Response Time Module */}
-            <div className="space-y-6 rounded-2xl border border-white/[0.08] bg-[#0d0c13]/80 p-6 shadow-lg backdrop-blur-xl sm:p-8">
+            <div className="space-y-6 rounded-2xl border border-black/[0.08] bg-white/90 p-6 shadow-sm backdrop-blur-xl sm:p-8">
               <div>
-                <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#ddb7ff]">
+                <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#c4923a]">
                   <Clock className="h-4 w-4" />
                   Operational Hours
                 </div>
-                <h3 className="mb-3 text-xl font-semibold text-[#f8fafc]">Office Hours</h3>
-                <div className="space-y-2 text-xs sm:text-[13px] text-[#cfc2d6]">
-                  <div className="flex justify-between rounded-lg bg-[#2a2a2c]/40 px-3 py-2">
-                    <span className="font-medium text-[#f8fafc]">Monday – Friday</span>
-                    <span className="font-mono text-[#ddb7ff]">9:00 AM – 6:00 PM IST</span>
+                <h3 className="mb-3 text-xl font-semibold text-[#111111]">Office Hours</h3>
+                <div className="space-y-2 text-xs sm:text-[13px] text-[#6b7280]">
+                  <div className="flex justify-between rounded-lg bg-[#fdf8ee] px-3 py-2">
+                    <span className="font-medium text-[#111111]">Monday – Friday</span>
+                    <span className="font-mono text-[#c4923a]">9:00 AM – 6:00 PM IST</span>
                   </div>
-                  <div className="flex justify-between rounded-lg bg-[#2a2a2c]/40 px-3 py-2">
-                    <span className="font-medium text-[#f8fafc]">Saturday</span>
-                    <span className="font-mono text-[#c0c1ff]">10:00 AM – 4:00 PM IST</span>
+                  <div className="flex justify-between rounded-lg bg-[#fdf8ee] px-3 py-2">
+                    <span className="font-medium text-[#111111]">Saturday</span>
+                    <span className="font-mono text-[#8b6914]">10:00 AM – 4:00 PM IST</span>
                   </div>
-                  <div className="flex justify-between rounded-lg bg-[#2a2a2c]/40 px-3 py-2">
+                  <div className="flex justify-between rounded-lg bg-[#fdf8ee] px-3 py-2">
                     <span className="text-[#9ca3af]">Sunday</span>
                     <span className="font-mono text-[#9ca3af]">Closed</span>
                   </div>
                 </div>
               </div>
 
-              <div className="border-t border-white/[0.08] pt-4">
-                <div className="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#4cd7f6]">
+              <div className="border-t border-black/[0.06] pt-4">
+                <div className="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8b6914]">
                   <Zap className="h-4 w-4" />
                   Guaranteed SLA
                 </div>
-                <h3 className="mb-1 text-xl font-semibold text-[#f8fafc]">Response Time</h3>
-                <p className="text-xs leading-relaxed text-[#cfc2d6] sm:text-[13px]">
+                <h3 className="mb-1 text-xl font-semibold text-[#111111]">Response Time</h3>
+                <p className="text-xs leading-relaxed text-[#6b7280] sm:text-[13px]">
                   We typically respond to inquiries within{" "}
-                  <span className="font-semibold text-[#f8fafc]">24 hours</span>. For urgent technical matters or active enterprise outages, please call us directly or use our priority channel.
+                  <span className="font-semibold text-[#111111]">24 hours</span>. For urgent technical matters or active enterprise outages, please call us directly or use our priority channel.
                 </p>
               </div>
             </div>
 
             {/* Social Connect Channels */}
-            <div className="space-y-4 rounded-2xl border border-white/[0.08] bg-[#0d0c13]/80 p-6 shadow-lg backdrop-blur-xl sm:p-8">
+            <div className="space-y-4 rounded-2xl border border-black/[0.08] bg-white/90 p-6 shadow-sm backdrop-blur-xl sm:p-8">
               <div>
-                <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#c0c1ff]">
+                <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#8b6914]">
                   Ecosystem
                 </div>
-                <h3 className="text-xl font-semibold text-[#f8fafc]">Connect With Us</h3>
-                <p className="mt-1 text-xs text-[#cfc2d6] sm:text-[13px]">
+                <h3 className="text-xl font-semibold text-[#111111]">Connect With Us</h3>
+                <p className="mt-1 text-xs text-[#6b7280] sm:text-[13px]">
                   Follow us on social media to stay updated with our latest projects, AI research, and architecture breakdowns.
                 </p>
               </div>
@@ -615,13 +601,13 @@ export function ContactPageClient() {
                 {/* GitHub */}
                 <a
                   href="#"
-                  className="group flex items-center gap-3 rounded-xl bg-[#2a2a2c]/60 p-3 text-[#cfc2d6] transition-all hover:bg-[#2a2a2c] hover:text-[#f8fafc]"
+                  className="group flex items-center gap-3 rounded-xl bg-[#fdf8ee] p-3 text-[#6b7280] transition-all hover:bg-[#f5eed8] hover:text-[#111111]"
                 >
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0e0e10] text-[#ddb7ff] transition-transform group-hover:scale-110">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-[#c4923a] transition-transform group-hover:scale-110 shadow-sm">
                     <Code2 className="h-4 w-4" />
                   </div>
                   <div className="min-w-0">
-                    <div className="truncate text-xs font-medium text-[#f8fafc]">GitHub</div>
+                    <div className="truncate text-xs font-medium text-[#111111]">GitHub</div>
                     <div className="truncate font-mono text-[11px] text-[#9ca3af]">@company</div>
                   </div>
                 </a>
@@ -629,13 +615,13 @@ export function ContactPageClient() {
                 {/* WhatsApp Community */}
                 <a
                   href="#"
-                  className="group flex items-center gap-3 rounded-xl bg-[#2a2a2c]/60 p-3 text-[#cfc2d6] transition-all hover:bg-[#2a2a2c] hover:text-[#f8fafc]"
+                  className="group flex items-center gap-3 rounded-xl bg-[#fdf8ee] p-3 text-[#6b7280] transition-all hover:bg-[#f5eed8] hover:text-[#111111]"
                 >
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0e0e10] text-[#4cd7f6] transition-transform group-hover:scale-110">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-[#8b6914] transition-transform group-hover:scale-110 shadow-sm">
                     <MessageCircle className="h-4 w-4" />
                   </div>
                   <div className="min-w-0">
-                    <div className="truncate text-xs font-medium text-[#f8fafc]">WhatsApp</div>
+                    <div className="truncate text-xs font-medium text-[#111111]">WhatsApp</div>
                     <div className="truncate font-mono text-[11px] text-[#9ca3af]">Instant sync</div>
                   </div>
                 </a>
@@ -643,13 +629,13 @@ export function ContactPageClient() {
                 {/* LinkedIn */}
                 <a
                   href="#"
-                  className="group flex items-center gap-3 rounded-xl bg-[#2a2a2c]/60 p-3 text-[#cfc2d6] transition-all hover:bg-[#2a2a2c] hover:text-[#f8fafc]"
+                  className="group flex items-center gap-3 rounded-xl bg-[#fdf8ee] p-3 text-[#6b7280] transition-all hover:bg-[#f5eed8] hover:text-[#111111]"
                 >
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0e0e10] text-[#c0c1ff] transition-transform group-hover:scale-110">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-[#b8860b] transition-transform group-hover:scale-110 shadow-sm">
                     <Network className="h-4 w-4" />
                   </div>
                   <div className="min-w-0">
-                    <div className="truncate text-xs font-medium text-[#f8fafc]">LinkedIn</div>
+                    <div className="truncate text-xs font-medium text-[#111111]">LinkedIn</div>
                     <div className="truncate font-mono text-[11px] text-[#9ca3af]">Company news</div>
                   </div>
                 </a>
@@ -657,13 +643,13 @@ export function ContactPageClient() {
                 {/* Instagram */}
                 <a
                   href="#"
-                  className="group flex items-center gap-3 rounded-xl bg-[#2a2a2c]/60 p-3 text-[#cfc2d6] transition-all hover:bg-[#2a2a2c] hover:text-[#f8fafc]"
+                  className="group flex items-center gap-3 rounded-xl bg-[#fdf8ee] p-3 text-[#6b7280] transition-all hover:bg-[#f5eed8] hover:text-[#111111]"
                 >
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0e0e10] text-[#ddb7ff] transition-transform group-hover:scale-110">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-[#c4923a] transition-transform group-hover:scale-110 shadow-sm">
                     <Camera className="h-4 w-4" />
                   </div>
                   <div className="min-w-0">
-                    <div className="truncate text-xs font-medium text-[#f8fafc]">Instagram</div>
+                    <div className="truncate text-xs font-medium text-[#111111]">Instagram</div>
                     <div className="truncate font-mono text-[11px] text-[#9ca3af]">Updates &amp; Insights</div>
                   </div>
                 </a>
@@ -671,25 +657,25 @@ export function ContactPageClient() {
             </div>
 
             {/* Physical Location Mini-Visual View */}
-            <div className="space-y-3 overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0d0c13]/60 p-6 shadow-lg backdrop-blur-xl">
+            <div className="space-y-3 overflow-hidden rounded-2xl border border-black/[0.08] bg-white/90 p-6 shadow-sm backdrop-blur-xl">
               <div className="flex items-center justify-between">
                 <span className="text-xs uppercase tracking-wider text-[#9ca3af]">
                   Global Engineering Hub
                 </span>
-                <span className="font-mono text-xs text-[#ddb7ff]">COORDINATES // 00.0000° N, 00.0000° E</span>
+                <span className="font-mono text-xs text-[#c4923a]">COORDINATES // 00.0000° N, 00.0000° E</span>
               </div>
               <div
-                className="group relative flex h-44 w-full cursor-pointer items-end overflow-hidden rounded-xl border border-white/[0.06] bg-gradient-to-br from-[#1c1b1d] via-[#131315] to-[#201f21] p-4 shadow-md"
+                className="group relative flex h-44 w-full cursor-pointer items-end overflow-hidden rounded-xl border border-black/[0.06] bg-gradient-to-br from-[#fdf8ee] via-[#f5eed8] to-[#f0e8d0] p-4 shadow-sm"
               >
-                <div className="absolute inset-0 bg-[radial-gradient(#ddb7ff_1px,transparent_1px)] [background-size:16px_16px] opacity-15" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-[#030014]/40 to-transparent" />
+                <div className="absolute inset-0 bg-[radial-gradient(#c4923a_1px,transparent_1px)] [background-size:16px_16px] opacity-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#fdf8ee] via-[#fdf8ee]/40 to-transparent" />
                 <div className="relative z-10">
-                  <div className="text-base font-semibold text-[#f8fafc]">
+                  <div className="text-base font-semibold text-[#111111]">
                     Technology Center
                   </div>
-                  <div className="text-xs text-[#cfc2d6]">Corporate Campus &amp; Research Lab</div>
+                  <div className="text-xs text-[#6b7280]">Corporate Campus &amp; Research Lab</div>
                 </div>
-                <div className="absolute top-3 right-3 rounded-full bg-[#030014]/80 p-2 text-[#ddb7ff] backdrop-blur-md">
+                <div className="absolute top-3 right-3 rounded-full bg-white/80 p-2 text-[#c4923a] backdrop-blur-md shadow-sm">
                   <MapPin className="h-4 w-4" />
                 </div>
               </div>

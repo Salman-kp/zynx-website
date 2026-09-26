@@ -2,28 +2,16 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { MotionDiv } from "@/lib/animations";
 
 export function Hero() {
   return (
     <section id="top" className="grid-backdrop relative overflow-hidden pb-28 pt-16">
       <div className="hero-aura" />
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
-        <MotionDiv
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-8 inline-flex items-center gap-2 rounded-full border border-glow/30 bg-elevated px-4 py-1.5 shadow-sm"
-        >
-          <span className="h-2 w-2 animate-pulse rounded-full bg-violet" />
-          <span className="text-xs font-medium tracking-wide text-copy">
-            ⚡ ZYNX — Your TECH Partner
-          </span>
-        </MotionDiv>
 
         <h1 className="mb-6 text-4xl font-extrabold leading-[1.12] tracking-tight text-bright sm:text-6xl md:text-7xl">
           Custom software that runs your{" "}
-          <span className="gradient-text underline decoration-glow/40 underline-offset-8">
+          <span className="gradient-text  decoration-glow/40 underline-offset-8">
             operations
           </span>
         </h1>
