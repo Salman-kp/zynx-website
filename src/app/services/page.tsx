@@ -1,20 +1,12 @@
 import type { Metadata } from "next";
-import { Services } from "@/components/sections/Services";
-import { Problems } from "@/components/sections/Problems";
-import { Contact } from "@/components/sections/Contact";
+import { ServicePageClient } from "./ServicePageClient";
 
 export const metadata: Metadata = {
-  title: "Services — Custom Software & AI Solutions",
+  title: "Our Services — Custom Software & Business Automation",
   description:
-    "A full spectrum of digital services from custom software engineering to AI solutions, automation, and web development.",
+    "Nine service lines, built around how your business operates rather than around a template. We start with the business, not the software.",
 };
 
 export default function ServicesPage() {
-  return (
-    <>
-      <Services />
-      <Problems />
-      <Contact />
-    </>
-  );
+  return <ServicePageClient />;
 }

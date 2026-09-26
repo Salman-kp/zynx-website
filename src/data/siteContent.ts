@@ -21,6 +21,7 @@ export const navLinks: NavLinkItem[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Work", href: "/work" },
+  { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -218,9 +219,10 @@ export const faqs: [string, string][] = [
 
 export const footerNavigationLinks: [string, string][] = [
   ["Home", "/"],
-  ["About", "/about"],
   ["Services", "/services"],
   ["Our Work", "/work"],
+  ["Pricing", "/pricing"],
+  ["About", "/about"],
   ["Contact", "/contact"],
 ];
 

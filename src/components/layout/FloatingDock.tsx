@@ -4,6 +4,7 @@ import { Brand } from "../common/Brand";
 const dockLinks: { label: string; href: string }[] = [
   { label: "Services", href: "/services" },
   { label: "Work", href: "/work" },
+  { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
