@@ -9,6 +9,5 @@ export { Services } from "./sections/Services";
 export { Portfolio } from "./sections/Portfolio";
 export { Process } from "./sections/Process";
 export { Stats } from "./sections/Stats";
-export { Faq } from "./sections/Faq";
 export { Contact } from "./sections/Contact";
 export { ContactForm } from "./forms/ContactForm";

@@ -3,7 +3,6 @@ import "./globals.css";
 import { siteConfig, companyInfo } from "@/config/site";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { FloatingDock } from "@/components/layout/FloatingDock";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -88,7 +87,6 @@ export default function RootLayout({
       <body className="min-h-screen bg-canvas text-copy antialiased selection:bg-deep selection:text-bright">
         <Header />
         <main className="relative pt-28">{children}</main>
-        <FloatingDock />
         <Footer />
       </body>
     </html>

@@ -18,9 +18,6 @@ export function Header() {
           onClick={() => setMenuOpen(false)}
         >
           <Brand />
-          <span className="hidden shrink-0 rounded-full border border-glow/20 bg-deep/60 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-violet sm:inline-block">
-            Your tech partner
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-copy md:flex">

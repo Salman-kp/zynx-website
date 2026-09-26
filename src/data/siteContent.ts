@@ -178,44 +178,6 @@ export const stats: [string, string, string][] = [
   ],
 ];
 
-export const faqs: [string, string][] = [
-  [
-    "What does a custom build typically cost?",
-    "Cost varies based on scope, technical complexity, integrations, and performance needs. Most custom platforms range from smaller scoped sprints ($3k-$8k) to comprehensive multi-module business systems ($15k-$50k+). We provide clear milestone-based pricing after the discovery phase.",
-  ],
-  [
-    "Can we start with something smaller than a full build?",
-    "Yes, absolutely. We often recommend starting with a high-fidelity prototype or a two-week Discovery Sprint to test assumptions, align stakeholders, and mitigate technical risks before committing to complete development.",
-  ],
-  [
-    "Who owns the code and the intellectual property?",
-    "You do. 100%. Upon completion and final payment, all intellectual property rights, repositories, credentials, and documentation are transferred fully to your organisation with zero vendor lock-in.",
-  ],
-  [
-    "Who actually writes the code? Is any of it subcontracted?",
-    "Our core team of dedicated engineers at Zynx Dev develops your software directly. We never blindly outsource or subcontract critical code to unknown third parties.",
-  ],
-  [
-    "How long does a project take?",
-    "Typical MVP projects take 6 to 10 weeks, while full enterprise web/mobile applications and workflow engines take 3 to 6 months delivered iteratively every two weeks.",
-  ],
-  [
-    "What happens if we need to stop, or it goes wrong?",
-    "Our contracts have modular sprint stages. You can stop or pause work at any stage checkpoint. You retain full ownership of whatever work, designs, and code was completed up to that point.",
-  ],
-  [
-    "Will you sign an NDA?",
-    "Yes, absolutely. We routinely sign non-disclosure agreements before reviewing proprietary business logic or product documentation.",
-  ],
-  [
-    "What happens after launch?",
-    "We offer comprehensive warranty periods alongside continuous support retainers for monitoring, bug fixes, server maintenance, security patches, and incremental feature updates.",
-  ],
-  [
-    "Do you work with small businesses, or only larger companies?",
-    "We work with ambitious founders, established SME businesses, as well as fast-growing mid-market companies needing high-reliability software.",
-  ],
-];
 
 export const footerNavigationLinks: [string, string][] = [
   ["Home", "/"],
