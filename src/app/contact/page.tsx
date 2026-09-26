@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import { Contact } from "@/components/sections/Contact";
-import { Faq } from "@/components/sections/Faq";
+import { ContactPageClient } from "./ContactPageClient";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Book a Discovery Call",
+  title: "Get in Touch — Contact Us | zynx.dev",
   description:
-    "Get in touch with our engineering team for software development, automation, AI, and digital transformation.",
+    "Have a project in mind? Let's discuss how we can bring your vision to life. We're here to engineer high-velocity solutions tailored to your scale.",
 };
 
 export default function ContactPage() {
-  return (
-    <>
-      <Contact showForm={true} />
-      <Faq />
-    </>
-  );
+  return <ContactPageClient />;
 }

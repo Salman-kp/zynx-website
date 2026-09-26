@@ -1,22 +1,12 @@
 import type { Metadata } from "next";
-import { Stats } from "@/components/sections/Stats";
-import { Process } from "@/components/sections/Process";
-import { Faq } from "@/components/sections/Faq";
-import { Contact } from "@/components/sections/Contact";
+import { AboutPageClient } from "./AboutPageClient";
 
 export const metadata: Metadata = {
-  title: "About Us — Engineering & Innovation",
+  title: "About Us — Building Tomorrow's Digital Experiences | zynx.dev",
   description:
-    "Learn about our engineering philosophy, founders' experience, and our 7-stage software development process.",
+    "A team of passionate designers and developers dedicated to crafting exceptional digital experiences that inspire and innovate.",
 };
 
 export default function AboutPage() {
-  return (
-    <>
-      <Stats />
-      <Process />
-      <Faq />
-      <Contact />
-    </>
-  );
+  return <AboutPageClient />;
 }

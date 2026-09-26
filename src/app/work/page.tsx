@@ -1,20 +1,12 @@
 import type { Metadata } from "next";
-import { Portfolio } from "@/components/sections/Portfolio";
-import { Process } from "@/components/sections/Process";
-import { Contact } from "@/components/sections/Contact";
+import { WorkPageClient } from "./WorkPageClient";
 
 export const metadata: Metadata = {
-  title: "Our Work — Portfolio & Case Studies",
+  title: "Our Work — Systems We've Built | zynx.dev",
   description:
-    "Explore platforms and systems we've built, including event operations platforms, ERPs, and custom enterprise tools.",
+    "Explore systems we've built and what they changed. High-load platforms, ERPs, and custom infrastructure engineered for mission-critical scale.",
 };
 
 export default function WorkPage() {
-  return (
-    <>
-      <Portfolio />
-      <Process />
-      <Contact />
-    </>
-  );
+  return <WorkPageClient />;
 }
